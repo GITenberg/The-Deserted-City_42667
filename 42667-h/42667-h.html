@@ -1,0 +1,1320 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.1//EN' 'http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.8.1: http://docutils.sourceforge.net/" />
+<style type="text/css">
+/* 
+Project Gutenberg common docutils stylesheet.
+
+This stylesheet contains styles common to HTML and EPUB.  Put styles
+that are specific to HTML and EPUB into their relative stylesheets.
+
+:Author: Marcello Perathoner (webmaster@gutenberg.org)
+:Copyright: This stylesheet has been placed in the public domain.
+
+This stylesheet is based on:
+
+  :Author: David Goodger (goodger@python.org)
+  :Copyright: This stylesheet has been placed in the public domain.
+
+  Default cascading style sheet for the HTML output of Docutils.
+
+*/
+
+/* ADE 1.7.2 chokes on !important and throws all css out. */
+
+/* FONTS */
+
+.italics    { font-style: italic }
+.no-italics { font-style: normal }
+
+.bold       { font-weight: bold }
+.no-bold    { font-weight: normal }
+
+.small-caps { } /* Epub needs italics */
+.gesperrt   { } /* Epub needs italics */
+.antiqua    { font-style: italic } /* what else can we do ? */
+.monospaced { font-family: monospace }
+
+.smaller    { font-size: smaller }
+.larger     { font-size: larger }
+
+.xx-small   { font-size: xx-small }
+.x-small    { font-size: x-small }
+.small      { font-size: small }
+.medium     { font-size: medium }
+.large      { font-size: large }
+.x-large    { font-size: x-large }
+.xx-large   { font-size: xx-large }
+
+.text-transform-uppercase { text-transform: uppercase }
+.text-transform-lowercase { text-transform: lowercase }
+.text-transform-none      { text-transform: none }
+
+.red        { color: red }
+.green      { color: green }
+.blue       { color: blue }
+.yellow     { color: yellow }
+.white      { color: white }
+.gray       { color: gray }
+.black      { color: black }
+
+/* ALIGN */
+
+.left       { text-align: left }
+.justify    { text-align: justify }
+.center     { text-align: center; text-indent: 0 }
+.centerleft { text-align: center; text-indent: 0 }
+.right      { text-align: right;  text-indent: 0 }
+
+/* LINE HEIGHT */
+
+body        { line-height: 1.5 }
+p           { margin: 0; 
+	      text-indent: 2em }
+
+/* PAGINATION */
+
+.title, .subtitle     { page-break-after:  avoid }
+
+.container, .title, .subtitle, #pg-header            
+                      { page-break-inside: avoid }
+
+/* SECTIONS */
+
+body         { text-align: justify }
+
+p.pfirst, p.noindent { 
+    text-indent: 0 
+}
+
+.boxed         { border: 1px solid black; padding: 1em }
+.topic, .note  { margin: 5% 0; border: 1px solid black; padding: 1em }
+div.section    { clear: both }
+
+div.line-block       { margin: 1.5em 0 }  /* same leading as p */
+div.line-block.inner { margin: 0 0 0 10% }
+div.line             { margin-left: 20%; text-indent: -20%; }
+.line-block.noindent div.line { margin-left: 0; text-indent: 0; }
+
+hr.docutils          { margin: 1.5em 40%; border: none; border-bottom: 1px solid black; }
+div.transition       { margin: 1.5em 0 }
+
+.vfill, .vspace      { border: 0px solid white }
+
+.title               { margin: 1.5em 0 }
+.title.with-subtitle { margin-bottom: 0 }
+.subtitle            { margin: 1.5em 0 }
+
+/* header font style */
+/* http://dev.w3.org/csswg/css3-fonts/#propdef-font-size */
+
+h1.title                        { font-size: 200%; }  /* for book title only */
+h2.title, p.subtitle.level-1    { font-size: 150%; margin-top: 4.5em;  margin-bottom: 2em }
+h3.title, p.subtitle.level-2    { font-size: 120%; margin-top: 2.25em; margin-bottom: 1.25em }
+h4.title, p.subtitle.level-3    { font-size: 100%; margin-top: 1.5em;  margin-bottom: 1.5em;  font-weight: bold; }
+h5.title, p.subtitle.level-4    { font-size:  89%; margin-top: 1.87em; margin-bottom: 1.69em; font-style: italic; }
+h6.title, p.subtitle.level-5    { font-size:  60%; margin-top: 3.5em;  margin-bottom: 2.5em }
+
+/* title page */
+
+h1.title, p.subtitle.level-1,
+h2.title, p.subtitle.level-2    { text-align: center }
+
+#pg-header,
+h1.document-title               { margin: 10% 0 5% 0 }
+p.document-subtitle             { margin:  0  0 5% 0 }
+
+/* PG header and footer */
+#pg-machine-header { }
+#pg-produced-by { }
+
+li.toc-entry            { list-style-type: none }
+ul.open li, ol.open li  { margin-bottom: 1.5em }
+
+.attribution            { margin-top: 1.5em }
+
+.example-rendered { 
+    margin: 1em 5%; border: 1px dotted red;  padding: 1em; background-color: #ffd }
+.literal-block.example-source   { 
+    margin: 1em 5%; border: 1px dotted blue; padding: 1em; background-color: #eef }
+
+/* DROPCAPS */
+
+/* BLOCKQUOTES */
+
+blockquote { margin: 1.5em 10% }
+
+blockquote.epigraph { }
+
+blockquote.highlights { }
+
+div.local-contents { margin: 1.5em 10% }
+
+div.abstract { margin: 3em   10% }
+div.image    { margin: 1.5em  0  }
+div.caption  { margin: 1.5em  0 }
+div.legend   { margin: 1.5em  0 }
+
+.hidden { display: none }
+
+.invisible { visibility: hidden; color: white } /* white: mozilla print bug */
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+div.figure { margin-top: 3em; margin-bottom: 3em }
+
+img { max-width: 100% }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+ol.simple, ul.simple { margin: 1.5em 0 }
+
+ol.toc-list,    ul.toc-list    { padding-left:  0  }
+ol ol.toc-list, ul ul.toc-list { padding-left:  5% }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title, p.admonition-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+.literal-block, .doctest-block {
+  margin-left: 2em ;
+  margin-right: 2em; }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 100% }
+
+table { margin-top: 1.5em; margin-bottom: 1.5em; border-spacing: 0 }
+table.align-left, table.align-right { margin-top: 0 }
+
+table.table                { border-collapse: collapse; }
+
+table.table.hrules-table thead          { border: 1px solid black; border-width: 2px 0 0 }
+table.table.hrules-table tbody          { border: 1px solid black; border-width: 2px 0 }
+table.table.hrules-rows  tr             { border: 1px solid black; border-width: 0 0 1px }
+table.table.hrules-rows  tr.last        { border-width: 0 }
+table.table.hrules-rows  td, 
+table.table.hrules-rows  th             { padding: 1ex 1em; vertical-align: middle }
+
+table.table tr             { border-width: 0 }
+table.table td, 
+table.table th             { padding: 0.5ex 1em }
+table.table tr.first td    { padding-top: 1ex }
+table.table tr.last td     { padding-bottom: 1ex }
+table.table tr.first th    { padding-top: 1ex }
+table.table tr.last th     { padding-bottom: 1ex }
+
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 3em 4em }
+
+table.docutils { }
+
+div.footnote-group          { margin: 1em 0 }
+table.footnote td.label     { width: 2em; text-align: right; padding-left: 0 }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding: 0 0.5em;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "!important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 } /* FIXME: was !important */
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+</style>
+<style type="text/css">
+/* 
+Project Gutenberg HTML docutils stylesheet.
+
+This stylesheet contains styles specific to HTML.
+*/
+
+/* FONTS */
+
+/* em                { font-style: normal }
+strong            { font-weight: normal } */
+
+.small-caps       { font-variant: small-caps }
+.gesperrt         { letter-spacing: 0.1em }
+
+/* ALIGN */
+
+.align-left       { clear: left;
+		    float: left;
+		    margin-right: 1em }
+
+.align-right      { clear: right;
+		    float: right;
+		    margin-left: 1em }
+
+.align-center     { margin-left: auto;
+		    margin-right: auto }
+
+div.shrinkwrap    { display: table; }
+
+/* SECTIONS */
+
+body              { margin: 5% 10% 5% 10% }
+
+/* compact list items containing just one p */
+li p.pfirst       { margin-top: 0; margin-bottom: 0 } 
+
+.first            { margin-top: 0 !important; 
+		    text-indent: 0 !important } 
+.last             { margin-bottom: 0 !important }
+
+span.dropcap      { float: left; margin: 0 0.1em 0 0; line-height: 1 }
+img.dropcap       { float: left; margin: 0 0.5em 0 0; max-width: 25% }
+span.dropspan     { font-variant: small-caps }
+
+.no-page-break    { page-break-before: avoid !important }
+
+/* PAGINATION */
+
+.pageno           { position: absolute; right: 95%; font: medium sans-serif; text-indent: 0 }
+.pageno:after     { color: gray; content: '[' attr(title) ']' }
+.lineno           { position: absolute; left:  95%; font: medium sans-serif; text-indent: 0 }
+.lineno:after     { color: gray; content: '[' attr(title) ']' }
+.toc-pageref      { float: right }
+
+@media screen {
+   .coverpage, .frontispiece, .titlepage, .verso, .dedication, .plainpage
+                       { margin: 10% 0; }
+
+   div.clearpage, div.cleardoublepage
+                       { margin: 10% 0; border: none; border-top: 1px solid gray; }
+
+   .vfill              { margin:  5% 10% }
+}
+
+@media print {
+   div.clearpage       { page-break-before: always; padding-top: 10% }
+   div.cleardoublepage { page-break-before: right;  padding-top: 10%  }
+
+   .vfill              { margin-top: 20% }
+   h2.title            { margin-top: 20% }
+}
+
+/* DIV */
+pre               { font-family: monospace; font-size: 0.9em; white-space: pre-wrap }
+
+</style>
+<title>THE DESERTED CITY</title>
+<meta name="PG.Rights" content="Public Domain" />
+<meta name="PG.Title" content="The Deserted City" />
+<meta name="PG.Producer" content="Al Haines" />
+<link rel="coverpage" href="images/img-cover.jpg" />
+<meta name="DC.Creator" content="Francis Sherman" />
+<meta name="DC.Created" content="1899" />
+<meta name="PG.Id" content="42667" />
+<meta name="PG.Released" content="2013-05-08" />
+<meta name="DC.Language" content="en" />
+<meta name="DC.Title" content="The Deserted City" />
+
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS" />
+<link href="http://id.loc.gov/vocabulary/relators" rel="schema.MARCREL" />
+<meta content="The Deserted City" name="DCTERMS.title" />
+<meta content="deserted.rst" name="DCTERMS.source" />
+<meta content="en" scheme="DCTERMS.RFC4646" name="DCTERMS.language" />
+<meta content="2013-05-08T17:52:51.818554+00:00" scheme="DCTERMS.W3CDTF" name="DCTERMS.modified" />
+<meta content="Project Gutenberg" name="DCTERMS.publisher" />
+<meta content="Public Domain in the USA." name="DCTERMS.rights" />
+<link href="http://www.gutenberg.org/ebooks/42667" rel="DCTERMS.isFormatOf" />
+<meta content="Francis Sherman" name="DCTERMS.creator" />
+<meta content="2013-05-08" scheme="DCTERMS.W3CDTF" name="DCTERMS.created" />
+<meta content="width=device-width" name="viewport" />
+<meta content="EpubMaker 0.3.20a7 by Marcello Perathoner &lt;webmaster@gutenberg.org&gt;" name="generator" />
+</head>
+<body>
+<div class="document" id="the-deserted-city">
+<h1 class="center document-title level-1 pfirst title"><span class="x-large">THE DESERTED CITY</span></h1>
+
+<!-- this is the default PG-RST stylesheet -->
+<!-- figure and image styles for non-image formats -->
+<!-- default transition -->
+<!-- default attribution -->
+<!-- -*- encoding: utf-8 -*- -->
+<div class="clearpage">
+</div>
+<!-- -*- encoding: utf-8 -*- -->
+<div class="align-None container language-en pgheader" id="pg-header" xml:lang="en" lang="en">
+<p class="noindent pfirst"><span>This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever. You may copy it, give it away or
+re-use it under the terms of the </span><a class="reference internal" href="#project-gutenberg-license">Project Gutenberg License</a><span>
+included with this eBook or online at
+</span><a class="reference external" href="http://www.gutenberg.org/license">http://www.gutenberg.org/license</a><span>.</span></p>
+<p class="noindent pnext"></p>
+<div class="vspace" style="height: 2em">
+</div>
+<div class="align-None container" id="pg-machine-header">
+<p class="noindent pfirst"><span>Title: The Deserted City
+<br />
+<br />Author: Francis Sherman
+<br />
+<br />Release Date: May 08, 2013 [EBook #42667]
+<br />
+<br />Language: English
+<br />
+<br />Character set encoding: UTF-8</span></p>
+</div>
+<div class="vspace" style="height: 2em">
+</div>
+<p class="noindent pfirst" id="pg-start-line"><span>*** START OF THIS PROJECT GUTENBERG EBOOK </span><span>THE DESERTED CITY</span><span> ***</span></p>
+<div class="vspace" style="height: 4em">
+</div>
+<p class="noindent pfirst" id="pg-produced-by"><span>Produced by Al Haines.</span></p>
+<div class="vspace" style="height: 1em">
+</div>
+<p class="noindent pfirst"><span></span></p>
+</div>
+<div class="align-None container titlepage">
+<div class="vspace" style="height: 4em">
+</div>
+<p class="center pfirst"><span class="x-large">THE DESERTED CITY</span></p>
+<p class="center pnext"><span class="large">Stray Sonnets written by F. S.
+<br />and Rescued for the Few who
+<br />Love them by H. D.</span></p>
+<div class="vspace" style="height: 2em">
+</div>
+<div class="align-center auto-scaled figure margin" style="width: 33%" id="figure-10">
+<img class="align-center block center" style="display: block; width: 100%" alt="Title page decoration" src="images/img-title.jpg" />
+<div class="caption center centerleft figure-caption margin">
+<span class="italics">Title page decoration</span></div>
+</div>
+<div class="vspace" style="height: 2em">
+</div>
+<p class="center pfirst"><em class="italics medium">Privately Printed</em><span class="medium">
+<br />MDCCCXCIX</span></p>
+</div>
+<div class="vspace" style="height: 4em">
+</div>
+<p class="center pfirst"><span class="x-large">THE DESERTED CITY</span></p>
+<div class="vspace" style="height: 3em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF NIGHT</span></div>
+<div class="line"> </div>
+<div class="line"><span>Though all the light were lifted from the land,</span></div>
+<div class="line"><span>And a great darkness lay upon the sea;</span></div>
+<div class="line"><span>Though, groping each for some not-careless hand,</span></div>
+<div class="line"><span>I felt sad men pass over wearily;</span></div>
+<div class="line"><span>Though it were certain dawn would not come in</span></div>
+<div class="line"><span>With the next hour; that after many days</span></div>
+<div class="line"><span>Would no moon rise where the grey clouds grew thin,</span></div>
+<div class="line"><span>Nor any stars resume their ancient ways:</span></div>
+<div class="line"><span>Though all my world was thus, and I more blind</span></div>
+<div class="line"><span>Than the dead, blundering planets raining past,</span></div>
+<div class="line"><span>I know I should not fancy Time unkind;</span></div>
+<div class="line"><span>For you, as once of old you came, at last</span></div>
+<div class="line"><span>Would surely come, and with unfaltering faith</span></div>
+<div class="line"><span>Lead me beyond the dominance of death.</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF DOUBT</span></div>
+<div class="line"> </div>
+<div class="line"><span>Why should we fear?  The sun will surely rise,</span></div>
+<div class="line"><span>If we but wait, to light us on our way.</span></div>
+<div class="line"><span>Think you none hearkeneth to us who pray,</span></div>
+<div class="line"><span>That no God's heart is softened by our cries?</span></div>
+<div class="line"><span>Did we not learn that He was kind and wise</span></div>
+<div class="line"><span>And loved our souls?  And shall your bodies say</span></div>
+<div class="line"><span>"There is no light.  The tales they told us,--they</span></div>
+<div class="line"><span>Were only dreams, dreamed in the House of Lies."</span></div>
+<div class="line"><span>Nay, listen not to what your body saith,</span></div>
+<div class="line"><span>But by the memory of those antique years</span></div>
+<div class="line"><span>When it was evil and of little faith</span></div>
+<div class="line"><span>And led the soul along a way of tears,</span></div>
+<div class="line"><span>Let your soul chant--as one that hath no fears--</span></div>
+<div class="line"><span>"We know that Thou art stronger, God, than death."</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF MERCY</span></div>
+<div class="line"> </div>
+<div class="line"><span>I question not, Beloved, nor deny</span></div>
+<div class="line"><span>That you had God's own right of punishment;</span></div>
+<div class="line"><span>Yet now my sins and days are over and spent</span></div>
+<div class="line"><span>Find you the hours so pleasant that go by?</span></div>
+<div class="line"><span>Would not the colour of the fields and sky,</span></div>
+<div class="line"><span>The odour of the woods, bring more content</span></div>
+<div class="line"><span>Now, if a little pity had been lent</span></div>
+<div class="line"><span>Then, unto love, to judge a life awry?</span></div>
+<div class="line"><span>Upon a day the young June grasses seem</span></div>
+<div class="line"><span>Quite still that keep the edge of the still stream;</span></div>
+<div class="line"><span>I think you go down close to them, and say:</span></div>
+<div class="line"><span>"O little grasses, waiting patiently,</span></div>
+<div class="line"><span>I come to tell you this is God's decree:</span></div>
+<div class="line"><span>'</span><em class="italics">I comfort him who suffered yesterday?</em><span>'"</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF EARTH</span></div>
+<div class="line"> </div>
+<div class="line"><span>O ye disconsolate and heavy-souled,</span></div>
+<div class="line"><span>That evening cometh when ye too shall learn</span></div>
+<div class="line"><span>The pangs of one who may no more return,</span></div>
+<div class="line"><span>To live again the uneven days of old.</span></div>
+<div class="line"><span>Ye too shall weary of the myrrh and gold</span></div>
+<div class="line"><span>(Seeing the gods and their great unconcern),</span></div>
+<div class="line"><span>And, as I yearn to-day, your feet shall yearn</span></div>
+<div class="line"><span>To touch that Earth which ye afar behold.</span></div>
+<div class="line"><span>Think now upon your grievous things to bear,--</span></div>
+<div class="line"><span>Some goal unwon, some old sin's lurid stain,</span></div>
+<div class="line"><span>Your vistaed paths,--are they not fair as hope?</span></div>
+<div class="line"><span>But I between dead suns must peer, and grope</span></div>
+<div class="line"><span>Among forsaken worlds, one glimpse to gain</span></div>
+<div class="line"><span>Of my old place--the heaviest shadow there.</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF FAITH</span></div>
+<div class="line"> </div>
+<div class="line"><span>I would not have thee, dear, in darkness sit,</span></div>
+<div class="line"><span>On days like this, hand clasped in quiet hand,</span></div>
+<div class="line"><span>Remembering mournfully that fragrant land--</span></div>
+<div class="line"><span>Each day therein, the joy we had of it.</span></div>
+<div class="line"><span>Rather, while still the lamps are trimmed and lit,</span></div>
+<div class="line"><span>Bid strangers to the feasts that once we planned,</span></div>
+<div class="line"><span>Merry the while!  Until the dust's demand</span></div>
+<div class="line"><span>My soul, not thine, shall separately submit.</span></div>
+<div class="line"><span>So, when thou comest (for I at last will call</span></div>
+<div class="line"><span>And thou shalt hear, and linger not at all),</span></div>
+<div class="line"><span>Still to thy throat, thine arms, thy loosened hair</span></div>
+<div class="line"><span>Will cling the savour of the World's fresh kiss,</span></div>
+<div class="line"><span>So sweet to me! and doubly sweet for this--</span></div>
+<div class="line"><span>That thou for mine shouldst leave a place so fair!</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF TEARS</span></div>
+<div class="line"> </div>
+<div class="line"><span>When in the old years I had dreams of thee</span></div>
+<div class="line"><span>Thy dark walls stood in a most barren place;</span></div>
+<div class="line"><span>And he within (was his wan face </span><em class="italics">my</em><span> face?)</span></div>
+<div class="line"><span>Wandered alone and wept continually.</span></div>
+<div class="line"><span>There was no bird to hear, nor sun to see,</span></div>
+<div class="line"><span>Nor green thing growing; nor for his release</span></div>
+<div class="line"><span>Came sleep; neither forgetfulness nor peace:</span></div>
+<div class="line"><span>Whereby I knew that none had sinned as he.</span></div>
+<div class="line"><span>To-day I met him where white lilies gleam;</span></div>
+<div class="line"><span>Across our path we watched the sparrows flit;</span></div>
+<div class="line"><span>Until--the sunlight strong in our dry eyes--</span></div>
+<div class="line"><span>He paused with me beside a green-edged stream,</span></div>
+<div class="line"><span>Moaning, "I know, where its young waters rise,</span></div>
+<div class="line"><span>Remembering, one leaneth over it."</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF LOVE</span></div>
+<div class="line"> </div>
+<div class="line"><span>Often between the midnight and the morn</span></div>
+<div class="line"><span>I wake and see the angels round my bed;</span></div>
+<div class="line"><span>Then fall asleep again, well-comforted.</span></div>
+<div class="line"><span>I wait not now till that clear dawn be born</span></div>
+<div class="line"><span>Shall lead my feet (O Love, thine eyes are worn</span></div>
+<div class="line"><span>With watching) where her feet have late been led;</span></div>
+<div class="line"><span>Nor lie awake, saying the words she said--</span></div>
+<div class="line"><span>(Her yellow hair.--Have ye seen yellow corn?)</span></div>
+<div class="line"><span>I fall asleep and dream and quite forget,</span></div>
+<div class="line"><span>For here in heaven I know a new love's birth</span></div>
+<div class="line"><span>Which casteth out all memory.  And yet</span></div>
+<div class="line"><span>(As I had loved her more, O Christ, on earth,</span></div>
+<div class="line"><span>Hadst Thou not been so long unsought, unmet)</span></div>
+<div class="line"><span>Some morrow Thou shalt learn my worship's worth.</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF BEAUTY</span></div>
+<div class="line"> </div>
+<div class="line"><span>She pauseth; and as each great mirror swings</span></div>
+<div class="line"><span>(O ruined Helen, O once golden hair)</span></div>
+<div class="line"><span>I see Œnone's ashes scattered there.</span></div>
+<div class="line"><span>Another, and, behold, the shadowed things</span></div>
+<div class="line"><span>Are violated tombs of shrunken kings.</span></div>
+<div class="line"><span>And yet another (O, how thou wert fair!),</span></div>
+<div class="line"><span>And I see one, black-clad, who prayeth where</span></div>
+<div class="line"><span>No sound of sword on cloven helmet rings.</span></div>
+<div class="line"><span>Yet, were I Paris, once more should I see</span></div>
+<div class="line"><span>Troy's seaward gates for us swung open wide.</span></div>
+<div class="line"><span>Or old Nile's glory, were I Anthony.</span></div>
+<div class="line"><span>Or, were I Launcelot, the garden-side</span></div>
+<div class="line"><span>At Joyous Gard.  Surely; for even to me,</span></div>
+<div class="line"><span>Where Love hath lived hath Beauty never died.</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF CONTENT</span></div>
+<div class="line"> </div>
+<div class="line"><span>Were once again the immortal moment mine</span></div>
+<div class="line"><span>How should I choose my path?  The path I chose</span></div>
+<div class="line"><span>(How long ago I wonder if Time knows)</span></div>
+<div class="line"><span>Even now I see.  I see the old sun shine</span></div>
+<div class="line"><span>Upon the moss, thick strewn with fir and pine;</span></div>
+<div class="line"><span>The open field; the orchard's even rows;</span></div>
+<div class="line"><span>The wood again; then, where the hills unclose,</span></div>
+<div class="line"><span>Far off at first, now near, the long-sought shrine.</span></div>
+<div class="line"><span>O Time, how impotent thou art!  Though thou</span></div>
+<div class="line"><span>Hast taken me from all things, and all things</span></div>
+<div class="line"><span>From me,--although the wind of thy swift wings</span></div>
+<div class="line"><span>Hath swept at last the shadow from her brow</span></div>
+<div class="line"><span>Of my last kiss, yet do I triumph now</span></div>
+<div class="line"><span>Who, choosing, paused to hear Love's counsellings.</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF CHANGE</span></div>
+<div class="line"> </div>
+<div class="line"><span>Was it last Autumn only, when I stood</span></div>
+<div class="line"><span>At the field's edge, and watched the red glow creep</span></div>
+<div class="line"><span>Among the leaves, and saw the swift flame sweep</span></div>
+<div class="line"><span>From spruce to hemlock, till the living wood</span></div>
+<div class="line"><span>Became a devastated solitude?</span></div>
+<div class="line"><span>For now, behold, old seeds, long years asleep,</span></div>
+<div class="line"><span>Wake; and a legion of young birches leap</span></div>
+<div class="line"><span>To life, and tell the ashes life is good.</span></div>
+<div class="line"><span>O Love of long ago, when this mad fire</span></div>
+<div class="line"><span>Is over, and the ruins of my soul</span></div>
+<div class="line"><span>With the Spring wind the old quest would resume,--</span></div>
+<div class="line"><span>When age knocks at the inn of youth's desire,</span></div>
+<div class="line"><span>Shall the new growth, now worthier of the goal,</span></div>
+<div class="line"><span>Find still untenanted the chosen room?</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF REGRET</span></div>
+<div class="line"> </div>
+<div class="line"><span>It is not that I now were happier</span></div>
+<div class="line"><span>If with the dawn my tireless feet were led</span></div>
+<div class="line"><span>Along her path, till I saw her fair head</span></div>
+<div class="line"><span>Thrown back to make the sunshine goldener:</span></div>
+<div class="line"><span>For it is well, sometimes, the things that were</span></div>
+<div class="line"><span>Are over, ere their perfectness hath fled;</span></div>
+<div class="line"><span>Lest the old love of them should fade instead,</span></div>
+<div class="line"><span>And lie like ruins round the throne of her.</span></div>
+<div class="line"><span>Now with the wisdom of increasing years</span></div>
+<div class="line"><span>I know each ancient joy a cup for tears;</span></div>
+<div class="line"><span>Yet had I drunk, while they were draughts to praise,</span></div>
+<div class="line"><span>Deeper, I were not now as men that grow</span></div>
+<div class="line"><span>Old, and sit gazing out across the snow</span></div>
+<div class="line"><span>To dream sad dreams of wasted summer days.</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF WISDOM</span></div>
+<div class="line"> </div>
+<div class="line"><span>I had not thought (ah, God! had I but known!)</span></div>
+<div class="line"><span>That this sad hour should ever me befall,</span></div>
+<div class="line"><span>When thou I judged the holiest of all</span></div>
+<div class="line"><span>Should come to be the thing I must disown.</span></div>
+<div class="line"><span>Was it not true? that April morn? thy blown</span></div>
+<div class="line"><span>Gold hair around my hair for coronal?</span></div>
+<div class="line"><span>Or is this truer?--thou at the outer wall,</span></div>
+<div class="line"><span>Unroyal, and with unrepentant moan?</span></div>
+<div class="line"><span>Yet prize I now this wisdom I have won,</span></div>
+<div class="line"><span>Who must always remember?  Nay!  My tears</span></div>
+<div class="line"><span>Must close mine eyes--as thou wouldst hide thy face</span></div>
+<div class="line"><span>If some great meteor, kindred to the sun,</span></div>
+<div class="line"><span>Should haunt the undying stars ten million years</span></div>
+<div class="line"><span>To fall, some noon, dead in thy market place.</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF SIN</span></div>
+<div class="line"> </div>
+<div class="line"><span>When Time is done at last, and the last Spring</span></div>
+<div class="line"><span>Fadeth on earth, and thy gaze seeketh mine,</span></div>
+<div class="line"><span>Watch well for one whose face beareth for sign</span></div>
+<div class="line"><span>The legend of a soul's refashioning:</span></div>
+<div class="line"><span>As I shall watch for one whose pale hands bring</span></div>
+<div class="line"><span>The first faint violet, and know them thine</span></div>
+<div class="line"><span>Grown pitiful and come to build Love's shrine</span></div>
+<div class="line"><span>Where the old Aprils wait, unfaltering.</span></div>
+<div class="line"><span>Then the great floods between us will retire,</span></div>
+<div class="line"><span>And the long path I follow down will grow</span></div>
+<div class="line"><span>To be the path thy climbing feet desire;</span></div>
+<div class="line"><span>Until we meet at last, made glad, and know</span></div>
+<div class="line"><span>The cleansing hands that made my soul as snow</span></div>
+<div class="line"><span>Have kept alive in thine the ancient fire.</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF MUSIC</span></div>
+<div class="line"> </div>
+<div class="line"><span>Such space there is, such endless breadth of time</span></div>
+<div class="line"><span>Between me and my world of yesterday,</span></div>
+<div class="line"><span>I half forget what sounds these be that stray</span></div>
+<div class="line"><span>About my chamber, and grow and fall and climb.</span></div>
+<div class="line"><span>Listen!--that sweet reiterated chime,</span></div>
+<div class="line"><span>Doth it not mark some body changed to clay?</span></div>
+<div class="line"><span>That last great chord, some anguish far away?</span></div>
+<div class="line"><span>Hark! harmony ever now and faultless rhyme.</span></div>
+<div class="line"><span>O Soul of mine, among these lutes and lyres,</span></div>
+<div class="line"><span>These reeds, these golden pipes, and quivering strings,</span></div>
+<div class="line"><span>Thou knowest now that in the old, old years</span></div>
+<div class="line"><span>We who knew only one of all desires</span></div>
+<div class="line"><span>Came often even to music's furthest springs--</span></div>
+<div class="line"><span>To pass, because their waters gleamed like tears.</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE HOUSE OF COLOUR</span></div>
+<div class="line"> </div>
+<div class="line"><span>Mine gold is here; yea, heavy yellow gold,</span></div>
+<div class="line"><span>Gathered ere Earth's first days and nights were fled;</span></div>
+<div class="line"><span>And all the walls are hung with scarfs of red,</span></div>
+<div class="line"><span>Broidered in fallen cities, fold on fold;</span></div>
+<div class="line"><span>The stainéd window's saints are aureoled;</span></div>
+<div class="line"><span>And all the textures of the East are spread</span></div>
+<div class="line"><span>On the pavéd floor, whereon I lay my head,</span></div>
+<div class="line"><span>And sleep, and count the coloured things of old.</span></div>
+<div class="line"><span>Once, when the hills and I were all aflame</span></div>
+<div class="line"><span>With envy of the pageant in the West</span></div>
+<div class="line"><span>(Except the sombre pine-trees--whence there came,</span></div>
+<div class="line"><span>Continually, the sigh of their unrest),</span></div>
+<div class="line"><span>A lonely crow sailed past me, black as shame,</span></div>
+<div class="line"><span>Hugging some ancient sorrow to his breast.</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE FOURTH DAY</span></div>
+<div class="line"> </div>
+<div class="line"><span>As when the tideless, barren waters lay</span></div>
+<div class="line"><span>About the borders of the early earth;</span></div>
+<div class="line"><span>And small, unopened buds dreamt not the worth</span></div>
+<div class="line"><span>Of their incomparable gold array;</span></div>
+<div class="line"><span>And tall young hemlocks were not set a-sway</span></div>
+<div class="line"><span>By any wind; and orchards knew no mirth</span></div>
+<div class="line"><span>At Autumn time, nor plenteousness from dearth;</span></div>
+<div class="line"><span>And night and morning, then, were the first day,</span></div>
+<div class="line"><span>--Even so was I.  Yet, as I slept last night,</span></div>
+<div class="line"><span>My soul surged towards thy love's controlling power;</span></div>
+<div class="line"><span>And, quickened now with the sun's splendid might,</span></div>
+<div class="line"><span>Breaks into unimaginable flower,</span></div>
+<div class="line"><span>Knowing thy soul knows this for beacon-light--</span></div>
+<div class="line"><span>The culmination of the harvest hour.</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>VICTORY</span></div>
+<div class="line"> </div>
+<div class="line"><span>Because your strife and labour have been vain,</span></div>
+<div class="line"><span>Ye who have striven, shall I forego, forget</span></div>
+<div class="line"><span>The far-off goal where to my feet were set</span></div>
+<div class="line"><span>In the old days when life was first made plain?</span></div>
+<div class="line"><span>Upward in April, who, meeting with the rain,</span></div>
+<div class="line"><span>Did turn, the first shy mayflowers still are met?</span></div>
+<div class="line"><span>I who have sought, yea, who am seeking yet,</span></div>
+<div class="line"><span>What pain have I like unto your sore pain?</span></div>
+<div class="line"><span>So let me go as one yearning, that braves,</span></div>
+<div class="line"><span>With shipmen that have knowledge of the sea,</span></div>
+<div class="line"><span>The wind disastrous and the ponderous waves</span></div>
+<div class="line"><span>(Because his love dwells in some far countree),</span></div>
+<div class="line"><span>Crying, "Not one of all your million graves</span></div>
+<div class="line"><span>Is deep enough to keep my love from me!"</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>THE LAST STORM</span></div>
+<div class="line"> </div>
+<div class="line"><span>From north, from east, the strong wind hurries down</span></div>
+<div class="line"><span>Against the window-pane the sleet rings fast;</span></div>
+<div class="line"><span>The moon hath hid her face away, aghast,</span></div>
+<div class="line"><span>And darkness keeps each corner of the town.</span></div>
+<div class="line"><span>The garden hedges wear a heavy crown,</span></div>
+<div class="line"><span>And the old poplars shriek, as night drifts past,</span></div>
+<div class="line"><span>That, leagues on desolate leagues away, at last</span></div>
+<div class="line"><span>One comes to know he too must surely drown.</span></div>
+<div class="line"><span>And yet at noon, to-morrow, when I go</span></div>
+<div class="line"><span>Out to the white, white edges of the plain,</span></div>
+<div class="line"><span>I shall not grieve for this night's hurricane,</span></div>
+<div class="line"><span>Seeing how, in a little hollow, sinks the snow</span></div>
+<div class="line"><span>Around the southmost tree, where a lean crow</span></div>
+<div class="line"><span>Sits noisily impatient for the rain.</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 4em">
+</div>
+<!--  -->
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>A LAST WORD</span></div>
+<div class="line"> </div>
+<div class="line"><span>And if it be I shall not sing again,</span></div>
+<div class="line"><span>And thou have wonder at my silent ways,</span></div>
+<div class="line"><span>I pray thee think my days not weary days,</span></div>
+<div class="line"><span>Or that my heart is dumb for some new pain.</span></div>
+<div class="line"><span>Seeing that words are nought, nor may remain,</span></div>
+<div class="line"><span>Why should I strive with Time?  Come blame, come praise,</span></div>
+<div class="line"><span>I am but one of them his might betrays</span></div>
+<div class="line"><span>At last, when all men learn that all was vain.</span></div>
+<div class="line"><span>And yet one thing Time cannot wrest from me.</span></div>
+<div class="line"><span>Therefore, cry out, yea, even to the throng</span></div>
+<div class="line"><span>That pauseth not for echo of a song,</span></div>
+<div class="line"><span>"O, your red gold is very fair.  But he</span></div>
+<div class="line"><span>Is glad as heaven to loiter and dream along</span></div>
+<div class="line"><span>His Lady Beauty's path continually."</span></div>
+</div>
+</div>
+</blockquote>
+<div class="vspace" style="height: 6em">
+</div>
+<!-- -*- encoding: utf-8 -*- -->
+<div class="backmatter">
+</div>
+<p class="pfirst" id="pg-end-line"><span>*** END OF THIS PROJECT GUTENBERG EBOOK </span><span>THE DESERTED CITY</span><span> ***</span></p>
+<div class="cleardoublepage">
+</div>
+<div class="language-en level-2 pgfooter section" id="a-word-from-project-gutenberg" xml:lang="en" lang="en">
+<span id="pg-footer"></span><h2 class="level-2 pfirst section-title title"><span>A Word from Project Gutenberg</span></h2>
+<p class="pfirst"><span>We will update this book if we find any errors.</span></p>
+<p class="pnext"><span>This book can be found under: </span><a class="reference external" href="http://www.gutenberg.org/ebooks/42667"><span>http://www.gutenberg.org/ebooks/42667</span></a></p>
+<p class="pnext"><span>Creating the works from public domain print editions means that no one
+owns a United States copyright in these works, so the Foundation (and
+you!) can copy and distribute it in the United States without
+permission and without paying copyright royalties.  Special rules, set
+forth in the General Terms of Use part of this license, apply to
+copying and distributing Project Gutenberg™ electronic works to
+protect the Project Gutenberg™ concept and trademark. Project
+Gutenberg is a registered trademark, and may not be used if you charge
+for the eBooks, unless you receive specific permission. If you do not
+charge anything for copies of this eBook, complying with the rules is
+very easy. You may use this eBook for nearly any purpose such as
+creation of derivative works, reports, performances and research.
+They may be modified and printed and given away – you may do
+practically </span><em class="italics">anything</em><span> with public domain eBooks.  Redistribution is
+subject to the trademark license, especially commercial
+redistribution.</span></p>
+<div class="level-3 section" id="the-full-project-gutenberg-license">
+<span id="project-gutenberg-license"></span><h3 class="level-3 pfirst section-title title"><span>The Full Project Gutenberg License</span></h3>
+<p class="pfirst"><em class="italics">Please read this before you distribute or use this work.</em></p>
+<p class="pnext"><span>To protect the Project Gutenberg™ mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase “Project
+Gutenberg”), you agree to comply with all the terms of the Full
+Project Gutenberg™ License available with this file or online at
+</span><a class="reference external" href="http://www.gutenberg.org/license">http://www.gutenberg.org/license</a><span>.</span></p>
+<div class="level-4 section" id="section-1-general-terms-of-use-redistributing-project-gutenberg-electronic-works">
+<h4 class="level-4 pfirst section-title title"><span>Section 1. General Terms of Use &amp; Redistributing Project Gutenberg™ electronic works</span></h4>
+<p class="pfirst"><strong class="bold">1.A.</strong><span> By reading or using any part of this Project Gutenberg™
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg™ electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg™ electronic work and you do not agree to be bound by
+the terms of this agreement, you may obtain a refund from the person
+or entity to whom you paid the fee as set forth in paragraph 1.E.8.</span></p>
+<p class="pnext"><strong class="bold">1.B.</strong><span> “Project Gutenberg” is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg™ electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg™ electronic works if you follow the terms of this agreement
+and help preserve free future access to Project Gutenberg™ electronic
+works. See paragraph 1.E below.</span></p>
+<p class="pnext"><strong class="bold">1.C.</strong><span> The Project Gutenberg Literary Archive Foundation (“the
+Foundation” or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg™ electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is in the public domain in the United
+States and you are located in the United States, we do not claim a
+right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg™ mission of promoting free
+access to electronic works by freely sharing Project Gutenberg™ works
+in compliance with the terms of this agreement for keeping the Project
+Gutenberg™ name associated with the work. You can easily comply with
+the terms of this agreement by keeping this work in the same format
+with its attached full Project Gutenberg™ License when you share it
+without charge with others.</span></p>
+<p class="pnext"></p>
+<p class="pnext"><strong class="bold">1.D.</strong><span> The copyright laws of the place where you are located also
+govern what you can do with this work. Copyright laws in most
+countries are in a constant state of change. If you are outside the
+United States, check the laws of your country in addition to the terms
+of this agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg™ work.  The Foundation makes no
+representations concerning the copyright status of any work in any
+country outside the United States.</span></p>
+<p class="pnext"><strong class="bold">1.E.</strong><span> Unless you have removed all references to Project Gutenberg:</span></p>
+<p class="pnext"><strong class="bold">1.E.1.</strong><span> The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg™ License must appear
+prominently whenever any copy of a Project Gutenberg™ work (any work
+on which the phrase “Project Gutenberg” appears, or with which the
+phrase “Project Gutenberg” is associated) is accessed, displayed,
+performed, viewed, copied or distributed:</span></p>
+<blockquote>
+<div>
+<p class="pfirst"><span>This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever. You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at </span><a class="reference external" href="http://www.gutenberg.org">http://www.gutenberg.org</a></p>
+</div>
+</blockquote>
+<p class="pfirst"><strong class="bold">1.E.2.</strong><span> If an individual Project Gutenberg™ electronic work is
+derived from the public domain (does not contain a notice indicating
+that it is posted with permission of the copyright holder), the work
+can be copied and distributed to anyone in the United States without
+paying any fees or charges. If you are redistributing or providing
+access to a work with the phrase “Project Gutenberg” associated with
+or appearing on the work, you must comply either with the requirements
+of paragraphs 1.E.1 through 1.E.7 or obtain permission for the use of
+the work and the Project Gutenberg™ trademark as set forth in
+paragraphs 1.E.8 or 1.E.9.</span></p>
+<p class="pnext"><strong class="bold">1.E.3.</strong><span> If an individual Project Gutenberg™ electronic work is
+posted with the permission of the copyright holder, your use and
+distribution must comply with both paragraphs 1.E.1 through 1.E.7 and
+any additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg™ License for all works posted
+with the permission of the copyright holder found at the beginning of
+this work.</span></p>
+<p class="pnext"><strong class="bold">1.E.4.</strong><span> Do not unlink or detach or remove the full Project
+Gutenberg™ License terms from this work, or any files containing a
+part of this work or any other work associated with Project
+Gutenberg™.</span></p>
+<p class="pnext"><strong class="bold">1.E.5.</strong><span> Do not copy, display, perform, distribute or redistribute
+this electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg™ License.</span></p>
+<p class="pnext"><strong class="bold">1.E.6.</strong><span> You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg™ work in a format other
+than “Plain Vanilla ASCII” or other format used in the official
+version posted on the official Project Gutenberg™ web site
+(</span><a class="reference external" href="http://www.gutenberg.org">http://www.gutenberg.org</a><span>), you must, at no additional cost, fee or
+expense to the user, provide a copy, a means of exporting a copy, or a
+means of obtaining a copy upon request, of the work in its original
+“Plain Vanilla ASCII” or other form. Any alternate format must include
+the full Project Gutenberg™ License as specified in paragraph 1.E.1.</span></p>
+<p class="pnext"><strong class="bold">1.E.7.</strong><span> Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg™ works
+unless you comply with paragraph 1.E.8 or 1.E.9.</span></p>
+<p class="pnext"><strong class="bold">1.E.8.</strong><span> You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg™ electronic works provided
+that</span></p>
+<ul class="open">
+<li><p class="first pfirst"><span>You pay a royalty fee of 20% of the gross profits you derive from
+the use of Project Gutenberg™ works calculated using the method you
+already use to calculate your applicable taxes. The fee is owed to
+the owner of the Project Gutenberg™ trademark, but he has agreed to
+donate royalties under this paragraph to the Project Gutenberg
+Literary Archive Foundation. Royalty payments must be paid within 60
+days following each date on which you prepare (or are legally
+required to prepare) your periodic tax returns. Royalty payments
+should be clearly marked as such and sent to the Project Gutenberg
+Literary Archive Foundation at the address specified in Section 4,
+“Information about donations to the Project Gutenberg Literary
+Archive Foundation.”</span></p>
+</li>
+<li><p class="first pfirst"><span>You provide a full refund of any money paid by a user who notifies
+you in writing (or by e-mail) within 30 days of receipt that s/he
+does not agree to the terms of the full Project Gutenberg™
+License. You must require such a user to return or destroy all
+copies of the works possessed in a physical medium and discontinue
+all use of and all access to other copies of Project Gutenberg™
+works.</span></p>
+</li>
+<li><p class="first pfirst"><span>You provide, in accordance with paragraph 1.F.3, a full refund of
+any money paid for a work or a replacement copy, if a defect in the
+electronic work is discovered and reported to you within 90 days of
+receipt of the work.</span></p>
+</li>
+<li><p class="first pfirst"><span>You comply with all other terms of this agreement for free
+distribution of Project Gutenberg™ works.</span></p>
+</li>
+</ul>
+<p class="pfirst"><strong class="bold">1.E.9.</strong><span> If you wish to charge a fee or distribute a Project
+Gutenberg™ electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from both the Project Gutenberg Literary Archive Foundation and
+Michael Hart, the owner of the Project Gutenberg™ trademark. Contact
+the Foundation as set forth in Section 3. below.</span></p>
+<p class="pnext"><strong class="bold">1.F.</strong></p>
+<p class="pnext"><strong class="bold">1.F.1.</strong><span> Project Gutenberg volunteers and employees expend
+considerable effort to identify, do copyright research on, transcribe
+and proofread public domain works in creating the Project Gutenberg™
+collection. Despite these efforts, Project Gutenberg™ electronic
+works, and the medium on which they may be stored, may contain
+“Defects,” such as, but not limited to, incomplete, inaccurate or
+corrupt data, transcription errors, a copyright or other intellectual
+property infringement, a defective or damaged disk or other medium, a
+computer virus, or computer codes that damage or cannot be read by
+your equipment.</span></p>
+<p class="pnext"><strong class="bold">1.F.2.</strong><span> LIMITED WARRANTY, DISCLAIMER OF DAMAGES – Except for the
+“Right of Replacement or Refund” described in paragraph 1.F.3, the
+Project Gutenberg Literary Archive Foundation, the owner of the
+Project Gutenberg™ trademark, and any other party distributing a
+Project Gutenberg™ electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.</span></p>
+<p class="pnext"><strong class="bold">1.F.3.</strong><span> LIMITED RIGHT OF REPLACEMENT OR REFUND – If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.</span></p>
+<p class="pnext"><strong class="bold">1.F.4.</strong><span> Except for the limited right of replacement or refund set
+forth in paragraph 1.F.3, this work is provided to you ‘AS-IS,’ WITH
+NO OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.</span></p>
+<p class="pnext"><strong class="bold">1.F.5.</strong><span> Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.</span></p>
+<p class="pnext"><strong class="bold">1.F.6.</strong><span> INDEMNITY – You agree to indemnify and hold the Foundation,
+the trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg™ electronic works in accordance
+with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg™
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg™ work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg™ work, and (c) any
+Defect you cause.</span></p>
+</div>
+<div class="level-4 section" id="section-2-information-about-the-mission-of-project-gutenberg">
+<h4 class="level-4 pfirst section-title title"><span>Section 2. Information about the Mission of Project Gutenberg™</span></h4>
+<p class="pfirst"><span>Project Gutenberg™ is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.</span></p>
+<p class="pnext"><span>Volunteers and financial support to provide volunteers with the
+assistance they need, is critical to reaching Project Gutenberg™'s
+goals and ensuring that the Project Gutenberg™ collection will remain
+freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg™ and future generations. To
+learn more about the Project Gutenberg Literary Archive Foundation and
+how your efforts and donations can help, see Sections 3 and 4 and the
+Foundation web page at </span><a class="reference external" href="http://www.pglaf.org">http://www.pglaf.org</a><span> .</span></p>
+</div>
+<div class="level-4 section" id="section-3-information-about-the-project-gutenberg-literary-archive-foundation">
+<h4 class="level-4 pfirst section-title title"><span>Section 3. Information about the Project Gutenberg Literary Archive Foundation</span></h4>
+<p class="pfirst"><span>The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation's EIN or federal tax identification
+number is 64-6221541. Its 501(c)(3) letter is posted at
+</span><a class="reference external" href="http://www.gutenberg.org/fundraising/pglaf">http://www.gutenberg.org/fundraising/pglaf</a><span> . Contributions to the
+Project Gutenberg Literary Archive Foundation are tax deductible to
+the full extent permitted by U.S.  federal laws and your state's laws.</span></p>
+<p class="pnext"><span>The Foundation's principal office is located at 4557 Melan Dr.
+S. Fairbanks, AK, 99712., but its volunteers and employees are
+scattered throughout numerous locations. Its business office is
+located at 809 North 1500 West, Salt Lake City, UT 84116, (801)
+596-1887, email </span><a class="reference external" href="mailto:business@pglaf.org">business@pglaf.org</a><span>. Email contact links and up to date
+contact information can be found at the Foundation's web site and
+official page at </span><a class="reference external" href="http://www.pglaf.org">http://www.pglaf.org</a></p>
+<p class="pnext"><span>For additional contact information:</span></p>
+<blockquote>
+<div>
+<div class="line-block outermost">
+<div class="line"><span>Dr. Gregory B. Newby</span></div>
+<div class="line"><span>Chief Executive and Director</span></div>
+<div class="line"><a class="reference external" href="mailto:gbnewby@pglaf.org">gbnewby@pglaf.org</a></div>
+</div>
+</div>
+</blockquote>
+</div>
+<div class="level-4 section" id="section-4-information-about-donations-to-the-project-gutenberg-literary-archive-foundation">
+<h4 class="level-4 pfirst section-title title"><span>Section 4. Information about Donations to the Project Gutenberg Literary Archive Foundation</span></h4>
+<p class="pfirst"><span>Project Gutenberg™ depends upon and cannot survive without wide spread
+public support and donations to carry out its mission of increasing
+the number of public domain and licensed works that can be freely
+distributed in machine readable form accessible by the widest array of
+equipment including outdated equipment. Many small donations ($1 to
+$5,000) are particularly important to maintaining tax exempt status
+with the IRS.</span></p>
+<p class="pnext"><span>The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular
+state visit </span><a class="reference external" href="http://www.gutenberg.org/fundraising/donate">http://www.gutenberg.org/fundraising/donate</a></p>
+<p class="pnext"><span>While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.</span></p>
+<p class="pnext"><span>International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.</span></p>
+<p class="pnext"><span>Please check the Project Gutenberg Web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: </span><a class="reference external" href="http://www.gutenberg.org/fundraising/donate">http://www.gutenberg.org/fundraising/donate</a></p>
+</div>
+<div class="level-4 section" id="section-5-general-information-about-project-gutenberg-electronic-works">
+<h4 class="level-4 pfirst section-title title"><span>Section 5. General Information About Project Gutenberg™ electronic works.</span></h4>
+<p class="pfirst"><span>Professor Michael S. Hart is the originator of the Project Gutenberg™
+concept of a library of electronic works that could be freely shared
+with anyone. For thirty years, he produced and distributed Project
+Gutenberg™ eBooks with only a loose network of volunteer support.</span></p>
+<p class="pnext"><span>Project Gutenberg™ eBooks are often created from several printed
+editions, all of which are confirmed as Public Domain in the
+U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.</span></p>
+<p class="pnext"><span>Each eBook is in a subdirectory of the same number as the eBook's
+eBook number, often in several formats including plain vanilla ASCII,
+compressed (zipped), HTML and others.</span></p>
+<p class="pnext"><span>Corrected </span><em class="italics">editions</em><span> of our eBooks replace the old file and take over
+the old filename and etext number. The replaced older file is
+renamed. </span><em class="italics">Versions</em><span> based on separate sources are treated as new
+eBooks receiving new filenames and etext numbers.</span></p>
+<p class="pnext"><span>Most people start at our Web site which has the main PG search
+facility:</span></p>
+<blockquote>
+<div>
+<p class="pfirst"><a class="reference external" href="http://www.gutenberg.org">http://www.gutenberg.org</a></p>
+</div>
+</blockquote>
+<p class="pfirst"><span>This Web site includes information about Project Gutenberg™, including
+how to make donations to the Project Gutenberg Literary Archive
+Foundation, how to help produce our new eBooks, and how to subscribe
+to our email newsletter to hear about new eBooks.</span></p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
