@@ -1,0 +1,33 @@
+_repo: The-Deserted-City_42667
+_version: 0.1.0
+covers:
+- cover_type: archival
+  image_path: 42667-h/images/img-cover.jpg
+creator:
+  author:
+    agent_name: Sherman, Francis
+    alias: Sherman, Francis Joseph
+    birthdate: 1871
+    deathdate: 1926
+    gutenberg_agent_id: '41806'
+    url: http://www.gutenberg.org/2009/agents/41806
+description: ''
+gutenberg_issued: '2013-05-08'
+gutenberg_type: Text
+identifiers:
+  gutenberg: '42667'
+language: en
+publisher: Project Gutenberg
+rights: Public domain in the USA.
+rights_url: http://creativecommons.org/about/pdm
+subjects:
+- !lcc 'PS'
+- !lcsh 'Sonnets'
+- !lcsh 'Canadian poetry'
+tableOfContents: The house of night -- The house of doubt -- The house of mercy --
+  The house of earth -- The house of faith -- The house of tears -- The house of love
+  -- The house of beauty -- The house of content -- The house of change -- The house
+  of regret -- The house of wisdom -- The house of sin -- The house of music -- The
+  house of colour -- The fourth day -- Victory -- The last storm -- A last word.
+title: The Deserted City
+url: http://www.gutenberg.org/ebooks/42667
